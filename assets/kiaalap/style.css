@@ -2382,6 +2382,15 @@ ul.two-part-sp li{
     border-radius: 3px;
 	outline:none;
 }
+.product-status-wrap .vs-setting {
+    border: none;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 15px;
+    background: #e6f542;
+    border-radius: 3px;
+	outline:none;
+}
 .product-status-wrap .ds-setting {
     border: none;
     color: #fff;

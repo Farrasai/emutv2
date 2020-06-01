@@ -12,7 +12,7 @@
             <nav class="sidebar-nav left-sidebar-menu-pro">
                 <ul class="metismenu" id="menu1">
                     <li>
-                        <a class="" href="<?= base_url('admin'); ?>">
+                        <a class="" href="<?= base_url('admin/dashboard'); ?>">
                             <span class="educate-icon educate-home icon-wrap"></span>
                             <span class="mini-click-non">Dashboard</span>
                         </a>
@@ -781,7 +781,7 @@
                                     <ul class="breadcome-menu">
                                         <li><a href="#">Beranda</a> <span class="bread-slash">/</span>
                                         </li>
-                                        <li><span class="bread-blod">Mutasi</span>
+                                        <li><span class="bread-blod">Petugas</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -797,35 +797,37 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="product-status-wrap drp-lst">
-                        <h4>Daftar Mutasi</h4>
+                        <h4>Petugas Mutasi</h4>
                         <div class="add-product">
-                            <a href="add-department.html">Cetak Mutasi</a>
+                            <a href="add-department.html">Tambah Data</a>
                         </div>
                         <div class="asset-inner">
                             <table>
                                 <tr>
                                     <th>No</th>
-                                    <th>Nama Siswa.</th>
+                                    <th>Instansi</th>
                                     <th>Status</th>
                                     <th>NISN</th>
-                                    <th>Asal Sekolah</th>
-                                    <th>Tujuan Sekolah</th>
-                                    <th>Orang Tua</th>
+                                    <th>Petugas</th>
+                                    <th>No. Telp</th>
+                                    <th>Last Login</th>
                                     <th>Setting</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>Jamet</td>
+                                    <td>SMP N 7 Cilacap</td>
                                     <td>
-                                        <button class="pd-setting">Disetujui</button>
+                                        <button class="btn btn-custon-rounded-three btn-success"> <i class="fa fa-check edu-checked-pro" aria-hidden="true"></i> Terverifikasi</button>
                                     </td>
                                     <td>14045</td>
-                                    <td>SMP N 7 Cilacap</td>
-                                    <td>BUDUT</td>
-                                    <td>Kuproy</td>
+                                    <td>Jamet, S.Pd</td>
+                                    <td>08967484838</td>
+                                    <td>7 Mei 2020</td>
                                     <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                        <button data-toggle="tooltip" title="Cek data" class="pd-setting-ed"><i class="fa fa-book fa-fw" aria-hidden="true"></i></button>
+                                        <button data-toggle="tooltip" title="Ubah" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+
+                                        <!--    <button data-toggle="tooltip" title="Hapus" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button> -->
                                     </td>
                                 </tr>
 
