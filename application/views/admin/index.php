@@ -811,24 +811,31 @@
                                     <th>Asal Sekolah</th>
                                     <th>Tujuan Sekolah</th>
                                     <th>Orang Tua</th>
-                                    <th>Setting</th>
+                                    <th>Opsi</th>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>Jamet</td>
-                                    <td>
-                                        <button class="pd-setting">Disetujui</button>
-                                    </td>
-                                    <td>14045</td>
-                                    <td>SMP N 7 Cilacap</td>
-                                    <td>BUDUT</td>
-                                    <td>Kuproy</td>
-                                    <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
+                                    <?php
+                                    $no = 1;
+                                    foreach ($mutasi as $m) : ?>
 
+                                        <td><?= $no++; ?></td>
+                                        <td><?= $m['nama_siswa']; ?></td>
+                                        <td>
+                                            <button class="pd-setting">Menunggu di Proses</button>
+                                        </td>
+                                        <td><?= $m['nisn']; ?></td>
+                                        <td><?= $m['asal_sekolah']; ?></td>
+                                        <td><?= $m['tujuan_sekolah']; ?></td>
+                                        <td><?= $m['orangtua']; ?></td>
+                                        <td>
+                                            <button data-toggle="tooltip" title="Print" class="pd-setting-ed"><i class="fa fa-print" aria-hidden="true"></i></button>
+                                            <button data-toggle="tooltip" title="Periksa" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                                            <button data-toggle="tooltip" title="Hapus" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                        </td>
+
+
+                                </tr>
+                            <?php endforeach; ?>
                             </table>
                         </div>
                         <div class="custom-pagination">

@@ -30,4 +30,10 @@ class Admin extends CI_Model
             return $query->result();
         }
     }
+
+    //fungsi tampil
+    function tampil()
+    {
+        return $this->db->get('mutasi')->result_array();
+    }
 }
