@@ -69,7 +69,6 @@ CREATE TABLE `mutasi` (
 /*Data for the table `mutasi` */
 
 insert  into `mutasi`(`id_mutasi`,`id_user`,`no_surat`,`nama_siswa`,`nis`,`nisn`,`jenis_kelamin`,`tempat_lahir`,`tgl_lahir`,`asal_sekolah`,`kelas`,`orangtua`,`kelurahan`,`kecamatan`,`kabupaten`,`alamat_lengkap`,`pindah_lanjut`,`tujuan_sekolah`,`tujuan_kabupaten`,`tujuan_provinsi`,`alasan`,`upload_surat_mutasi`,`upload_akte_kk`,`upload_surat_dapodik`,`status`,`status_jawaban`,`ttd`,`tgl_pengajuan`) values 
-(6,2,0,'Jamet Kuproy',2123,12313,'Laki - Laki','Cilacap','2020-05-11','Budut','11','Sutejo','Mertasinga','Cilacap Utara','Cilacap','ewdawd','Pindah','Sutomo','Magelang','Jawa Tengah','wdwd','mamunur.pdf','mamunur2.pdf','mamunur1.pdf','Diproses','','','2020-05-28'),
 (10,2,0,'Jamet anjas',31232,231,'Laki - Laki','dwad','2020-05-23','dwad','awdaw','awdawd','dawd','dwadawda','wdawdw','dawda','awdaw','awdwa','wdaawd','wdaw','awdawda','mamunur12.pdf','mamunur14.pdf','mamunur13.pdf','Diproses','','','2020-05-28');
 
 /*Table structure for table `tandatangan` */
@@ -99,7 +98,9 @@ CREATE TABLE `user` (
   `nama` varchar(300) NOT NULL,
   `jabatan` varchar(300) NOT NULL,
   `no_tlp` int(15) NOT NULL,
+  `alamat` varchar(300) NOT NULL,
   `surat_tugas` varchar(300) DEFAULT NULL,
+  `foto` varchar(300) NOT NULL,
   `verifikasi` varchar(300) NOT NULL,
   `role` enum('admin','user') NOT NULL,
   `tgl_daftar` date NOT NULL,
@@ -108,9 +109,9 @@ CREATE TABLE `user` (
 
 /*Data for the table `user` */
 
-insert  into `user`(`id`,`npsn`,`password`,`sekolah`,`nama`,`jabatan`,`no_tlp`,`surat_tugas`,`verifikasi`,`role`,`tgl_daftar`) values 
-(1,12345,'21232f297a57a5a743894a0e4a801fc3','ADMINISTRATOR','Farras Ammar I','Staff',8972772,NULL,'','admin','2020-03-24'),
-(2,11111,'ee11cbb19052e40b07aac0ca060c23ee','TEST USER','USER','STAFF',83838,NULL,'','user','2020-03-24');
+insert  into `user`(`id`,`npsn`,`password`,`sekolah`,`nama`,`jabatan`,`no_tlp`,`alamat`,`surat_tugas`,`foto`,`verifikasi`,`role`,`tgl_daftar`) values 
+(1,12345,'21232f297a57a5a743894a0e4a801fc3','ADMINISTRATOR','Farras Ammar I','Staff',8972772,'',NULL,'','','admin','2020-03-24'),
+(2,11111,'ee11cbb19052e40b07aac0ca060c23ee','SMK Kuproy','Jamet Kuproy','Staff',3433243,'JL Ter Kuproy 22','mamunur5.pdf','8VO262-ZLMGFz-sB1.jpg','','user','2020-03-24');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
