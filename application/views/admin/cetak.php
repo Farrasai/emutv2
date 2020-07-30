@@ -23,7 +23,7 @@
 
 <body>
     <center>
-        <table border="1">
+        <table>
             <tr>
                 <td>
                     <img src="<?= base_url(); ?>assets/img/cilacap500px.png" width="95" height="120" alt="">
@@ -31,23 +31,25 @@
                 <td>
                     <center>
                         <font size="4"><b>PEMERINTAH KABUPATEN CILACAP</b></font><br>
-                        <font size="6"><b>DINAS PENDIDIKAN DAN KEBUDAYAAN KABUPATEN CILACAP</b></font><br>
+                        <font size="6"><b>DINAS PENDIDIKAN DAN KEBUDAYAAN</b></font><br>
                         <font size="3">Jalan Kalimantan Nomor 51 Telp. (0282) 542797 Fax. (0282) 540579</font><br>
                         <font size="3">Website : http://pdk.cilacapkab.go.id / Email : pdkclp@gmail.com</font><br>
                         <font size="4"><b>CILACAP</b></font>
                     </center>
-            <tr>
-                <td class="text">Cilacap, 13 Februari 2020</td>
-            <tr>
                 </td>
+
+            </tr>
+
+        </table>
+        <table width="1087">
+            <tr>
+                <td class="text">Kode Pos 53224</td>
             </tr>
             <tr>
                 <td colspan="2">
                     <hr>
                 </td>
             </tr>
-        </table>
-        <table border="1" width="1087">
             <tr>
                 <td class="text">Cilacap, 13 Februari 2020</td>
             </tr>
